@@ -1,0 +1,41 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <section id="items-container"></section>
+        </main>
+        <section id="order-container">
+            <h3>Your Order</h3>
+            <div id="order-items"></div>
+            <hr>
+            <div id="total-price-wrapper">
+                <h4 id="total-price-text">Total price:</h4>
+                <h4 id="total-price-value"></h4>
+            </div>
+            <div id="button-wrapper">
+                <button id="complete-order-button" data-complete-order="complete-order-button">Complete order</button>
+            </div>
+        </section>
+        <section id="payment-modal-container" >
+            <div id="payment-modal-close-button-container">
+                <button id="payment-modal-close-button" data-close="payment-modal-close-button">X</button>
+            </div>
+            <div id="payment-modal-header">
+            <h3 id="payment-modal-title"> Enter card details </h3>
+            </div>
+            <form id="payment-modal-form">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="number" placeholder="Enter card number" required>
+                <input type="number" placeholder="Enter CVV" required>
+                <button id="pay-button" data-pay="pay-button" type="submit">Pay</button>
+            </form>
+        </section>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: "Smythe", system-ui;
+    user-select: none
+}
+
+#item-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 30px
+    
+}
+
+#ingredients {
+    color: #8B8B8B
+}
+
+#add-button, #order-price, #total-price-value {
+    margin-left: auto;
+    margin-right: 30px
+}
+
+#add-button {
+    border-radius: 50%;
+    color: #3c3c3c;
+    background: white;
+    border: 1px solid #DEDEDE;
+}
+
+#order-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 30px 
+}
+
+hr {
+    color: #393333;
+    margin-left: 30px;
+    margin-right: 30px
+}
+
+#order-container {
+    display: none
+}
+
+#order-container h3 {
+    text-align: center;
+}
+
+#total-price-wrapper{
+    display: flex
+}
+
+#remove {
+    color: #BBBBBB
+}
+
+
+
+#button-wrapper {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#total-price-text, #complete-order-button{
+    margin-left: 30px
+}
+
+#complete-order-button, #pay-button {
+    text-align: center;
+    width: 500px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    background: #16DB99;
+    color: white;
+    padding: 20px 0;
+    border: none;
+    border-radius: 3px;
+    font-family: Verdana
+}
+
+#payment-modal-container {
+    display: none;
+    width: 524px;
+    height: 350px;
+    padding: 20px 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid white;
+    margin: 50px;
+    box-shadow: 6px 2px 32px 32px darkgray;
+    background-color: white;
+    font-family: Verdana
+}
+
+#payment-modal-close-button-container {
+    text-align: right
+}
+
+#payment-modal-close-button {
+    border: none;
+    color: red;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 475px
+}
+
+#pay-button {
+    margin-left: 13px
+}
+
+#success-feedback {
+    text-align: center;
+    padding: 20px;
+    background: #ECFDF5;
+    color: #065F46;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: larger;
+}
+
+#complete-order-button:hover,
+#pay-button:hover, 
+#add-button:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+#remove:hover{
+    cursor: pointer;
+    color: red;
+}
+#payment-modal-close-button:hover{
+    cursor: pointer;
+    color:#DEDEDE;
+    background-color: red;
+    border: 1px solid #DEDEDE;
+}
